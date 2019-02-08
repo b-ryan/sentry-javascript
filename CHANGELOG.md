@@ -1,6 +1,6 @@
 # Changelog
 
-## Unreleased
+## v5
 
 ### Migration from v4
 
@@ -15,6 +15,15 @@ since we removed some methods from the public API and removed some classes from 
 - **breaking** [core] ref: Use `SyncPromise` internally, this reduces memory pressure by a lot.
 - **breaking** [browser] ref: Removed `BrowserBackend` from default export.
 - **breaking** [node] ref: Removed `BrowserBackend` from default export.
+
+## Unreleased
+
+- [browser] fix: `DOMError` and `DOMException` should be error level events
+- [browser] ref: Log error if Ember/Vue instances are not provided
+- [utils] fix: Dont mutate original input in `decycle` util function
+- [utils] fix: Skip non-enumerable properties in `decycle` util function
+- [utils] ref: Update `wrap` method to hide internal Sentry flags
+- [utils] fix: Make internal Sentry flags non-enumerable in `fill` util
 
 ## 4.5.3
 
